@@ -5,7 +5,7 @@
   "main": "./lib/index.js",
   "repository" : {
     "type": "git",
-    "url": "ssh://git@github.com/getmepass/ui-icons.git"
+    "url": "ssh://git@github.com/sangamcse/ui-icons.git"
   },
   "scripts": {
     "build": "yarn clean && gulp && yarn build:icon-component && yarn build:compile",
