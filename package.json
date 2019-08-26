@@ -1,6 +1,6 @@
 {
-  "name": "ui-icons",
-  "version": "0.0.3",
+  "name": "@sangamcse/ui-icons",
+  "version": "0.1.0",
   "description": "Icons for UI",
   "main": "./lib/index.js",
   "repository" : {
