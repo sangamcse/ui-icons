@@ -1,0 +1,32 @@
+{
+  "name": "ui-icons",
+  "version": "0.0.1",
+  "description": "Icons for UI",
+  "main": "./lib/index.js",
+  "private": true,
+  "repository": "https://github.com/getmepass/ui-icons",
+  "scripts": {
+    "build": "yarn clean && gulp && yarn build:icon-component && yarn build:compile",
+    "build:icon-component": "svgr --template template.js lib/ui_icons_svgs --out-dir lib/ui_icons && node scripts/build_index.js",
+    "build:compile": "BABEL_ENV=esm yarn babel lib --out-dir es && BABEL_ENV=node yarn babel lib --out-dir lib",
+    "clean": "rimraf lib es"
+  },
+  "devDependencies": {
+    "@babel/cli": "7.5.5",
+    "@babel/core": "7.5.5",
+    "@babel/preset-react": "^7.0.0",
+    "@svgr/babel-plugin-add-jsx-attribute": "4.2.0",
+    "@svgr/cli": "4.3.2",
+    "@svgr/plugin-jsx": "4.3.2",
+    "babel-plugin-remove-react-element": "1.0.1",
+    "ejs": "2.6.2",
+    "gulp": "3.9.1",
+    "gulp-consolidate": "0.2.0",
+    "gulp-filter": "6.0.0",
+    "gulp-iconfont": "10.0.3",
+    "gulp-load-plugins": "2.0.1",
+    "gulp-rename": "1.4.0",
+    "gulp-svgmin": "2.2.0",
+    "rimraf": "3.0.0"
+  }
+}

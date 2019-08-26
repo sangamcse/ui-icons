@@ -1,0 +1,4 @@
+<?xml version="1.0"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+    <path style="line-height:normal;text-indent:0;text-align:start;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000;text-transform:none;block-progression:tb;isolation:auto;mix-blend-mode:normal" d="M 2 4 L 2 20 L 22 20 L 22 15 C 21.657 15 21.318328 14.979453 20.986328 14.939453 L 20.96875 14.935547 C 20.65075 14.897547 20.337297 14.842437 20.029297 14.773438 C 16.649297 14.012438 13.981609 11.341938 13.224609 7.9609375 C 13.156609 7.6569375 13.102453 7.34525 13.064453 7.03125 L 13.060547 7.0136719 C 13.020547 6.6806719 13 6.343 13 6 L 12 6 L 10 4 L 2 4 z M 15 6 C 15 9.8543339 18.145666 13 22 13 L 22 11 C 19.226334 11 17 8.7736661 17 6 L 15 6 z M 19 6 C 19 7.6449698 20.35503 9 22 9 L 22 7 C 21.43497 7 21 6.5650302 21 6 L 19 6 z" font-weight="400" font-family="sans-serif" white-space="normal" overflow="visible"/>
+</svg>
