@@ -1,8 +1,8 @@
 {
   "name": "@sangamcse/ui-icons",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Icons for UI",
-  "main": "./lib",
+  "main": "./lib/ui_icons",
   "repository" : {
     "type": "git",
     "url": "ssh://git@github.com/sangamcse/ui-icons.git"
@@ -12,7 +12,7 @@
     "build:icon-component": "svgr --template template.js lib/ui_icons_svgs --out-dir lib/ui_icons && node scripts/build_index.js",
     "build:compile": "BABEL_ENV=esm yarn babel lib --out-dir es && BABEL_ENV=node yarn babel lib --out-dir lib",
     "clean": "rimraf lib es",
-    "clean:src": "rimraf scripts src",
+    "clean:src": "rimraf scripts src gulpfile.js README.md template.js .svgrrc .npmignore .travis.yml",
     "deploy": "yarn clean:src && npm publish"
   },
   "devDependencies": {
