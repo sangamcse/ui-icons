@@ -1,9 +1,10 @@
 {
   "name": "@sangamcse/ui-icons",
-  "version": "0.1.2",
+  "version": "1.0.0",
   "description": "Icons for UI",
+  "license": "WTFPL",
   "main": "./lib/ui_icons",
-  "repository" : {
+  "repository": {
     "type": "git",
     "url": "ssh://git@github.com/sangamcse/ui-icons.git"
   },
