@@ -1,4 +1,3 @@
 .gitignore
-gulpfile.js
 yarn-error.log
-.github
+npm-publish.yml
