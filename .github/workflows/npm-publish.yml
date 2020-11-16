@@ -1,28 +1,22 @@
 name: Node.js Package
 
 on:
-  release:
-    types: [created]
-
+  push:
+    branches:
+      - master
 jobs:
-  build:
+  release:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v1
         with:
-          node-version: 12
+          node-version: '8.17.x'
+          registry-url: 'https://npm.pkg.github.com'
+          scope: '@sangamcse'
+      - name: Install Dependencies
+        run: yarn install
       - run: yarn build
-
-  publish-gpr:
-    needs: build
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v1
-        with:
-          node-version: 12
-          registry-url: https://npm.pkg.github.com/
       - run: yarn deploy
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
