@@ -1,6 +1,6 @@
 {
   "name": "@sangamcse/ui-icons",
-  "version": "1.0.1",
+  "version": "1.0.1-alpha",
   "description": "Icons for UI",
   "license": "WTFPL",
   "main": "./lib/ui_icons",
@@ -10,10 +10,10 @@
   },
   "scripts": {
     "build": "yarn clean && gulp && yarn build:icon-component && yarn build:compile",
-    "build:icon-component": "yarn svgr --template template.js lib/ui_icons_svgs --out-dir lib/ui_icons && node scripts/build_index.js",
+    "build:icon-component": "svgr --template template.js lib/ui_icons_svgs --out-dir lib/ui_icons && node scripts/build_index.js",
     "build:compile": "BABEL_ENV=esm yarn babel lib --out-dir es && BABEL_ENV=node yarn babel lib --out-dir lib",
-    "clean": "yarn rimraf lib es",
-    "clean:src": "yarn rimraf scripts src gulpfile.js README.md template.js .svgrrc .npmignore .github",
+    "clean": "rimraf lib es",
+    "clean:src": "rimraf scripts src gulpfile.js README.md template.js .svgrrc .npmignore .github",
     "deploy": "yarn clean:src && npm publish"
   },
   "devDependencies": {

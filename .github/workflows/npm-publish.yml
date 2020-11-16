@@ -16,7 +16,6 @@ jobs:
           scope: '@sangamcse'
       - name: Install Dependencies
         run: yarn install
-      - run: yarn build
-      - run: yarn deploy
+      - run: yarn build && yarn deploy
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
