@@ -6,24 +6,42 @@
     [
       "@svgr/babel-plugin-remove-jsx-attribute",
       {
-        "elements": ["svg", "path", "g"],
-        "attributes": ["fill", "id", "className", "data-name", "color"]
+        "elements": [
+          "svg",
+          "path",
+          "g"
+        ],
+        "attributes": [
+          "fill",
+          "id",
+          "className",
+          "data-name",
+          "color"
+        ]
       }
     ],
     [
       "remove-react-element",
       {
-        "elementNames": ["style"]
+        "elementNames": [
+          "style"
+        ]
       }
     ],
     [
       "@svgr/babel-plugin-add-jsx-attribute",
       {
-        "elements": ["svg"],
+        "elements": [
+          "svg"
+        ],
         "attributes": [
           {
             "name": "fill",
             "value": "currentColor"
+          },
+          {
+            "name": "style",
+            "value": "display: inline-block;vertical-align: middle;"
           }
         ]
       }

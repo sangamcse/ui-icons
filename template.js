@@ -5,13 +5,12 @@ function template(
 ) {
   return template.ast`
     ${imports}
-    import '../index.scss';
-    const ${componentName} = ({ className = '', ...props }) => {
-      props = {...props, className: \`\${className} ui-svg-icon\`};
+
+    const ${componentName} = ({ props }) => {
       return (${jsx});
     }
     ${exports}
   `
 }
 
-module.exports = template
+module.exports = template;
