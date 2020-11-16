@@ -1,15 +1,12 @@
 {
   "name": "@sangamcse/ui-icons",
-  "version": "1.0.0-alpha",
+  "version": "1.0.1",
   "description": "Icons for UI",
   "license": "WTFPL",
   "main": "./lib/ui_icons",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/sangamcse/ui-icons.git"
-  },
-  "engines": {
-    "node": "8.17.0"
   },
   "scripts": {
     "build": "yarn clean && gulp && yarn build:icon-component && yarn build:compile",
